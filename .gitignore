@@ -1,0 +1,39 @@
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.ipynb_checkpoints/
+
+# Model weights and generated artifacts
+*.pth
+*.pt
+*.ckpt
+models/
+checkpoints/
+artifacts/
+outputs/
+
+# Hugging Face, dataset, and application caches
+.cache/
+.huggingface/
+huggingface/
+hf_cache/
+data/
+datasets/
+ag_news/
+AG_NEWS/
+
+# Temporary files
+*.log
+tmp/
+temp/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+credentials.json
