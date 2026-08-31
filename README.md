@@ -88,6 +88,34 @@ nlp-text-classification/
 
 `02_transformer.ipynb` содержит токенизацию и fine-tuning DistilBERT.
 
+## Запуск
+
+Установить зависимости:
+
+```
+pip install -r requirements.txt
+```
+
+Обучить DistilBERT:
+
+```
+python src/train.py
+```
+
+После обучения модель и tokenizer сохраняются локально в `models/distilbert-ag-news/`. Веса модели не хранятся в Git-репозитории.
+
+Получить предсказание для нового текста:
+
+```
+python -c "from src.predict import predict; print(predict('Apple reports record quarterly revenue as iPhone sales grow worldwide.'))"
+```
+
+Пример результата:
+
+```
+{'class': 'Sci/Tech', 'confidence': 0.7717501521110535}
+```
+
 ## Технологии
 
 - Python
